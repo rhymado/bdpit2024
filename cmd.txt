@@ -6,3 +6,9 @@ git add <direktori>
 
 Commit
 git commit -m <message>
+
+Revert
+git revert <argumen>
+
+Reset
+git reset <argumen>
