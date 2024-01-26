@@ -1,1 +1,1 @@
-ini adalah remote update
+ini adalah remote update di lokal
