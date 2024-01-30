@@ -1,0 +1,119 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+aside {
+  background-color: #5655da;
+  /* background-color: rgb(86, 85, 218); */
+  /* background-color: hsl(240, 64%, 59%); */
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  /* color: white; */
+  margin: 0 0 5px;
+  /* margin: top right bottom left; */
+  text-wrap: wrap;
+}
+
+.tabitem {
+  color: #9e9e9e;
+}
+
+.tabitem:hover {
+  color: #1a1a1a;
+}
+
+.tabitem::first-letter {
+  font-weight: 700;
+}
+
+.active {
+  color: #1a1a1a;
+}
+
+.contact {
+  margin-bottom: 250px;
+}
+
+input[type="text"] {
+  background-color: gray;
+}
+
+.skills .name {
+  font-size: 14px;
+  color: #1a1a1a;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* img + .name:hover {
+  border: 4px solid gold;
+} */
+
+/* section:nth-child(3) {
+  position: sticky;
+  top: 20px;
+  bottom: 20px;
+  background-color: #5655da;
+} */
+
+body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  flex: 1;
+  position: sticky;
+  top: 0;
+}
+
+.profile {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile > img {
+    border-radius: 50%;
+}
+
+.profile > .detail {
+  padding: 0 10%;
+}
+
+.socmed {
+  flex: 1;
+}
+
+main {
+  flex: 2.8;
+}
+
+.socmed {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
