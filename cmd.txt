@@ -12,3 +12,6 @@ git revert <argumen>
 
 Reset
 git reset <argumen>
+
+Clone
+git clone <git-url>
