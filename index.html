@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Personal CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -9,11 +10,11 @@
   </head>
   <body>
     <main>
-      <section class="aboutme">
+      <section id="aboutme">
         <div class="title">
           <h1>ABOUT ME</h1>
           <button>
-            <img src="" alt="" class="download" />
+            <img src="img/download.svg" alt="download" class="download" width="20" height="20" />
             <p>Download Resume</p>
           </button>
         </div>
@@ -32,26 +33,34 @@
           <div class="skill-detail">
             <p class="name">Photoshop</p>
             <p class="percent">90%</p>
-            <div class="graph"></div>
+            <div class="graph">
+              <div class="progress w90"></div>
+            </div>
           </div>
           <div class="skill-detail">
             <p class="name">Illustrator</p>
             <p class="percent">80%</p>
-            <div class="graph"></div>
+            <div class="graph">
+              <div class="progress w80"></div>
+            </div>
           </div>
           <div class="skill-detail">
             <p class="name">Indesign</p>
             <p class="percent">45%</p>
-            <div class="graph"></div>
+            <div class="graph">
+              <div class="progress w45"></div>
+            </div>
           </div>
           <div class="skill-detail">
             <p class="name">Corel Draw</p>
             <p class="percent">60%</p>
-            <div class="graph"></div>
+            <div class="graph">
+              <div class="progress w60"></div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="experience">
+      <section id="experience">
         <h1>EXPERIENCE</h1>
         <div class="experience-list">
           <div class="experience-detail">
@@ -81,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="education">
+      <section id="education">
         <h1>EDUCATION</h1>
         <div class="education-list">
           <div class="education-detail">
@@ -111,7 +120,7 @@
           </div>
         </div>
       </section>
-      <section class="works">
+      <section id="works">
         <h1>WORKS</h1>
         <div class="works-list">
           <div class="tabmenu">
@@ -131,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="testimonials">
+      <section id="testimonials">
         <h1>TESTIMONIALS</h1>
         <div class="testimony-list">
           <div class="testimony">
@@ -161,14 +170,16 @@
         </div>
         <div class="slide"></div>
       </section>
-      <section class="contact">
+      <section id="contact">
         <h1>CONTACT</h1>
         <form class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Your Email" />
-          <input type="text" name="phone" placeholder="Phone (optional)" />
-          <input type="text" name="subject" placeholder="Subject" />
-          <textarea name="message" placeholder="Message"></textarea>
+          <div class="input-form">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="email" placeholder="Your Email" />
+            <input type="text" name="phone" placeholder="Phone (optional)" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Message"></textarea>
+          </div>
           <button type="button">Send Message</button>
         </form>
       </section>
@@ -177,18 +188,18 @@
       <section class="profile">
         <img src="img/my-pic.jpg" alt="profile-pic" class="profile-img" width="200" height="200" />
         <div class="detail">
-          <p class="name">Fakhri Ridho Dhiyamatra</p>
+          <p class="name">Fakhri Ridho</p>
           <p class="job">Technical Trainer</p>
         </div>
       </section>
       <section class="socmed">
-        <div class="facebook">
+        <div class="facebook icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="100"
-            height="100"
+            width="100%"
+            height="100%"
             viewBox="0,0,256,256"
           >
             <g
@@ -215,13 +226,13 @@
             </g>
           </svg>
         </div>
-        <div class="twitter">
+        <div class="twitter icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="100"
-            height="100"
+            width="100%"
+            height="100%"
             viewBox="0,0,256,256"
           >
             <g
@@ -250,11 +261,11 @@
         </div>
       </section>
       <nav>
-        <a href="" class="nav-item">ABOUT ME</a>
-        <a href="" class="nav-item">EXPERIENCE</a>
-        <a href="" class="nav-item">EDUCATION</a>
-        <a href="" class="nav-item">WORKS</a>
-        <a href="" class="nav-item">CONTACT</a>
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#works">WORKS</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </aside>
   </body>
