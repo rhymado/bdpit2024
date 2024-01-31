@@ -1,0 +1,124 @@
+#aboutme .title {
+  position: relative;
+}
+#aboutme .title button {
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  top: -12px;
+  right: 0;
+}
+#aboutme .title button p {
+  color: #fff;
+}
+#aboutme .desc {
+  line-height: 28px;
+}
+#aboutme .skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+#aboutme .skills .skill-detail {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: "name percent" "pbar pbar";
+}
+#aboutme .skills .skill-detail .name {
+  grid-area: name;
+}
+#aboutme .skills .skill-detail .percent {
+  text-align: right;
+  grid-area: percent;
+}
+#aboutme .skills .skill-detail .graph {
+  grid-area: pbar;
+  background-color: gray;
+  height: 20px;
+  border-radius: 10px;
+}
+#aboutme .skills .skill-detail .graph .progress {
+  background-color: #f74470;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+#aboutme .skills .skill-detail .graph .w90 {
+  width: 90%;
+}
+#aboutme .skills .skill-detail .graph .w80 {
+  width: 80%;
+}
+#aboutme .skills .skill-detail .graph .w45 {
+  width: 45%;
+}
+#aboutme .skills .skill-detail .graph .w60 {
+  width: 60%;
+}
+
+#contact .input-form input {
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  font-weight: 300;
+}
+#contact .input-form input :focus {
+  outline: none;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+#contact .input-form textarea {
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid blue;
+  font-size: 14px;
+  font-weight: 300;
+  grid-area: msg;
+  resize: none;
+}
+#contact .input-form textarea :focus {
+  outline: none;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.profile .job, .profile {
+  font-size: 14px;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #5b5be6;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.profile {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile img {
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+}
+.profile .job {
+  color: #d8d8e9;
+  font-size: 300px;
+}
+
+/*# sourceMappingURL=scss.css.map */
