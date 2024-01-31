@@ -1,4 +1,8 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+:root {
+  --secondary-color: #5655da;
+  --primary-text-color: #2c2c2c;
+}
 
 * {
   margin: 0;
@@ -13,19 +17,19 @@ html {
 p {
   font-size: 14px;
   font-weight: 300;
-  color: #2c2c2c;
+  color: var(--primary-text-color);
 }
 
 button {
   border: none;
   cursor: pointer;
-  background-color: #5655da;
+  background-color: var(--secondary-color);
   color: #fff;
   border-radius: 2px;
 }
 
 aside {
-  background-color: #5655da;
+  background-color: var(--secondary-color);
   /* background-color: rgb(86, 85, 218); */
   /* background-color: hsl(240, 64%, 59%); */
 }
@@ -72,17 +76,6 @@ aside {
   margin: 0;
   font-weight: normal;
 }
-
-/* img + .name:hover {
-    border: 4px solid gold;
-  } */
-
-/* section:nth-child(3) {
-    position: sticky;
-    top: 20px;
-    bottom: 20px;
-    background-color: #5655da;
-  } */
 
 body {
   display: flex;
@@ -268,7 +261,7 @@ section h1 {
 }
 /* } */
 
-@media screen and (max-width:850px){
+@media screen and (max-width: 850px) {
   main {
     padding: 0 35px;
   }
@@ -277,7 +270,7 @@ section h1 {
   }
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width: 640px) {
   aside {
     display: none;
   }
